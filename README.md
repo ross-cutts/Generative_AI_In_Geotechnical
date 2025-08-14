@@ -113,6 +113,82 @@ OpenCode is a powerful AI coding assistant that works directly in your terminal.
    # "Count the total number of points in Example_data_from_Geosetta.geojson"
    ```
 
+### Using OpenCode's Plan Mode as a Learning Partner
+
+OpenCode offers a unique **Plan Mode** feature that makes it an excellent learning companion for understanding geotechnical data processing:
+
+#### What is Plan Mode?
+Plan Mode (`opencode --plan`) allows you to explore and understand solutions before executing them. The AI will:
+- Explain what it would do step-by-step
+- Show you the code it would write
+- Discuss different approaches
+- Help you understand the logic without making actual changes
+
+#### How to Use Plan Mode for Learning
+
+1. **Start OpenCode in Plan Mode**
+   ```bash
+   opencode --plan
+   ```
+
+2. **Ask exploratory questions**
+   ```
+   # Example prompts in plan mode:
+   "Show me how you would analyze the clustering patterns in this GeoJSON data"
+   "Explain different ways to visualize this geotechnical data"
+   "Walk me through creating a data pipeline for soil classification"
+   ```
+
+3. **Understand before executing**
+   - Review the AI's planned approach
+   - Ask follow-up questions about specific steps
+   - Learn the reasoning behind each decision
+   - Once comfortable, run without `--plan` to execute
+
+#### Learning Partner Strategies
+
+**For Beginners:**
+- Start in plan mode to understand each step
+- Ask "why" questions about the approach
+- Request alternative solutions to compare methods
+
+**For Intermediate Users:**
+- Use plan mode to explore advanced techniques
+- Compare different libraries and frameworks
+- Understand performance implications
+
+**For Advanced Users:**
+- Explore architectural decisions
+- Discuss optimization strategies
+- Plan complex multi-step workflows
+
+#### Example Learning Session
+```bash
+# Start in plan mode
+opencode --plan
+
+# Ask a learning-focused question
+"I want to understand how to process this GeoJSON file. Can you walk me through:
+1. How to parse the structure
+2. What libraries would be best for analysis
+3. Common pitfalls to avoid
+Show me the code you would write and explain each part."
+
+# Review the plan, ask clarifying questions
+"Why did you choose pandas over geopandas for this task?"
+
+# When ready, exit and run without --plan to execute
+opencode
+"Now implement the solution we discussed"
+```
+
+#### Benefits of Plan Mode for Learning
+- **Risk-free exploration** - Understand without breaking anything
+- **Deeper understanding** - See the reasoning behind solutions
+- **Multiple perspectives** - Explore different approaches
+- **Interactive learning** - Ask questions and get explanations
+- **Build confidence** - Review before executing
+
 ### Quick Start
 1. Clone this repository
 2. Install OpenCode (see above) or use your preferred AI assistant
